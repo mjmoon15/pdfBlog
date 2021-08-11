@@ -2,8 +2,8 @@
 
 Fork the repo\
 Run the following:\
-	### `npm install npm install @react-pdf/renderer --save`\
-	### `npm install moment`\
+	`npm install npm install @react-pdf/renderer --save`\
+	`npm install moment`
 
 
 ### `npm start`
