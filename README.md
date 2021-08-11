@@ -1,9 +1,9 @@
 # Fire up the PDF
 
-Fork the repo
-Run the following:
-	npm install npm install @react-pdf/renderer --save
-	npm install moment
+Fork the repo\
+Run the following:\
+	### `npm install npm install @react-pdf/renderer --save`\
+	### `npm install moment`\
 
 
 ### `npm start`
