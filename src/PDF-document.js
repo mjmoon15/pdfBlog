@@ -64,6 +64,7 @@ const TestPDF = () => (
 								.moveTo(62, 112)
 								.lineTo(75, 112)
 								.lineTo(125, 100)
+								.lineTo(62, 130)
 								.fill('blue')
 						}/>
 					</View>
