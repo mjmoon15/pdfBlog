@@ -2,41 +2,6 @@ import React from 'react'
 import { Text, View, StyleSheet } from '@react-pdf/renderer'
 import StandardTableView from './standard-table.js'
 
-const styles = StyleSheet.create({
-	tableWrapper: {
-		flex: 1,
-		display: 'flex',
-		flexWrap: 'wrap',
-		flexDirection: 'row',
-		paddingBottom: 10,
-		marginBottom: 25,
-		fontSize: 11,
-		borderTop: '3 solid #494949',
-	},
-	tableHeader: {
-		paddingBottom: 5,
-		backgroundColor: "#fff",
-		color: '#000',
-		width: '100%',
-		fontSize: 12,
-		fontFamily: 'Helvetica Neue Medium'
-	}, 
-	columnHeader: {
-		display: 'flex',
-		flexWrap: 'wrap',
-		borderBottom: '1 solid #494949',
-		textAlign: 'left',
-		fontFamily: 'Helvetica Neue Bold',
-	},
-	rowVal: {
-		color: 'black', 
-		whiteSpace: 'nowrap',
-		overflow: 'hidden',
-		textOverflow: 'ellipsis',
-		fontFamily: 'Helvetica Neue',
-	}
-});
-
 const SampleTable = (table, images) => {
 	const defaultWidth = 100 / 5
 	const columns = [{
@@ -108,7 +73,7 @@ const SampleTable = (table, images) => {
 
 	return (
 		<View wrap={false} style={{marginBottom: 5}}>
-			<Text style={styles.tableHeader}>Sample Table</Text>
+			<Text style={{paddingBottom: 5, backgroundColor: "#fff", color: '#000', width: '100%', fontSize: 12,}}>Sample Table</Text>
 			<StandardTableView tableData={tableData} columns={columns} />
 		</View>
 	)
