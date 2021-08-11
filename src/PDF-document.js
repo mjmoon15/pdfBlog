@@ -53,12 +53,15 @@ const TestPDF = () => (
 							style={{availableWidth: 100, availableHeight: 100, backgroundColor: 'black'}} 
 							paint={painter =>
 								painter
-								.moveTo(50, 87)
+								.moveTo(3, 87)
+								.lineTo(87, 3)
 								.lineTo(50, 125)
+								.lineTo(125, 50)
 								.lineTo(100, 125)
 								.fill('green')
 								.moveTo(75, 75)
 								.lineTo(62, 100)
+								.lineTo(100, 62)
 								.lineTo(112, 87)
 								.fill('red')
 								.moveTo(62, 112)
